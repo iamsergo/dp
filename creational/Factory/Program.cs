@@ -8,6 +8,9 @@ namespace Factory
         {
             App app = new App();
             app.Run("windows");
+
+            LogisticApp a = new LogisticApp("car");
+            a.Run();
         }
     }
 }
