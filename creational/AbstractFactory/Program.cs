@@ -4,6 +4,19 @@ namespace AbstractFactory
 {
     class Program
     {
+        static void ConfigureApp(string t)
+        {
+            IFactory f = t switch
+            {
+                "1" => new Factory1(),
+                "2" => new Factory2(),
+                _   => null
+            };
+
+            App app = new App(f);
+            app.Init();
+            app.Run();
+        }
         static void ConfigureApplication(string t)
         {
             IGUI ui = t switch
@@ -34,6 +47,7 @@ namespace AbstractFactory
         {
             ConfigureApplication("win");
             ConfigureFurniture("modern");
+            ConfigureApp("1");
         }
     }
 }
