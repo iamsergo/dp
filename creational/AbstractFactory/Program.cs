@@ -17,9 +17,23 @@ namespace AbstractFactory
             app.CreateUI();
             app.Render();
         }
+        static void ConfigureFurniture(string t)
+        {
+            IFurniture f = t switch
+            {
+                "modern" => new Modern(),
+                "decor"  => new Decor(),
+                _        => null
+            };
+
+            FurnitureApp app = new FurnitureApp(f);
+            app.CreateFurniture();
+            app.Put();
+        }
         static void Main(string[] args)
         {
             ConfigureApplication("win");
+            ConfigureFurniture("modern");
         }
     }
 }
