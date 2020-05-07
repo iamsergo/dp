@@ -11,6 +11,9 @@ namespace Factory
 
             LogisticApp a = new LogisticApp("car");
             a.Run();
+
+            Application an = new Application("b");
+            an.Run();
         }
     }
 }
