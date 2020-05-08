@@ -14,10 +14,16 @@ namespace Builder
             EApplication app = new EApplication();
             app.Run();
         }
+        static void HomeApplication()
+        {
+            HomeApp app = new HomeApp();
+            app.Run();
+        }
         static void Main(string[] args)
         {
-            //CarApp();
-            ECarApp();
+            // CarApp();
+            // ECarApp();
+            HomeApplication();
         }
     }
 }
