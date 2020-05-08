@@ -19,11 +19,17 @@ namespace Builder
             HomeApp app = new HomeApp();
             app.Run();
         }
+        static void Application()
+        {
+            App app = new App();
+            app.Run();
+        }
         static void Main(string[] args)
         {
-            // CarApp();
-            // ECarApp();
+            CarApp();
+            ECarApp();
             HomeApplication();
+            Application();
         }
     }
 }
