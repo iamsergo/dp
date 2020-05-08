@@ -9,9 +9,15 @@ namespace Builder
             Application app = new Application();
             app.Run();
         }
+        static void ECarApp()
+        {
+            EApplication app = new EApplication();
+            app.Run();
+        }
         static void Main(string[] args)
         {
-            CarApp();
+            //CarApp();
+            ECarApp();
         }
     }
 }
