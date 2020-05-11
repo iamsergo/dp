@@ -9,9 +9,15 @@ namespace CoR
             var app = new ResponseApplication();
             app.Run();
         }
+        static void LoginApp()
+        {
+            var app = new LoginApplication();
+            app.Run();
+        }
         static void Main(string[] args)
         {
-            ResponseApp();
+            //ResponseApp();
+            LoginApp();
         }
     }
 }
