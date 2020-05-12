@@ -14,10 +14,16 @@ namespace CoR
             var app = new LoginApplication();
             app.Run();
         }
+        static void TranslateApp()
+        {
+            var app = new TranslateApplication();
+            app.Run();
+        }
         static void Main(string[] args)
         {
             //ResponseApp();
-            LoginApp();
+            //LoginApp();
+            TranslateApp();
         }
     }
 }
