@@ -9,9 +9,15 @@ namespace Bridge
             var app = new DevicesApplication();
             app.Run();
         }
+        static void BrushAndShapeApp()
+        {
+            var app = new BrushAndShapeApplication();
+            app.Run();
+        }
         static void Main(string[] args)
         {
-            DevicesApp();
+            //DevicesApp();
+            BrushAndShapeApp();
         }
     }
 }
