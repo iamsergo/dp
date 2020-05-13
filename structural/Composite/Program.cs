@@ -9,9 +9,15 @@ namespace Composite
             var app = new GraphicApplication();
             app.Run();
         }
+        static void OrderApp()
+        {
+            var app = new OrderApplication();
+            app.Run();
+        }
         static void Main(string[] args)
         {
             GraphicApp();
+            OrderApp();
         }
     }
 }
