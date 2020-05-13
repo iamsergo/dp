@@ -14,10 +14,16 @@ namespace Composite
             var app = new OrderApplication();
             app.Run();
         }
+        static void App()
+        {
+            var app = new Application();
+            app.Run();
+        }
         static void Main(string[] args)
         {
             GraphicApp();
             OrderApp();
+            App();
         }
     }
 }
