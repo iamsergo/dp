@@ -14,10 +14,16 @@ namespace Command
             var app = new DatabaseApplication();
             app.Run();
         }
+        static void BankApp()
+        {
+            var app = new BankApplication();
+            app.Run();
+        }
         static void Main(string[] args)
         {
             ComputerApp();
             DatabaseApp();
+            BankApp();
         }
     }
 }
