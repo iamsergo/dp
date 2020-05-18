@@ -14,10 +14,16 @@ namespace Iterator
             var app = new OddEvenApplication();
             app.Run();
         }
+        static void SequenceApp()
+        {
+            var app = new SequenceApplication();
+            app.Run();
+        }
         static void Main(string[] args)
         {
-            // DeveloperApp();
-            OddEvenApp();
+            //DeveloperApp();
+            // OddEvenApp();
+            SequenceApp();
         }
     }
 }
