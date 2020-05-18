@@ -9,9 +9,15 @@ namespace Iterator
             var app = new DeveloperApplication();
             app.Run();
         }
+        static void OddEvenApp()
+        {
+            var app = new OddEvenApplication();
+            app.Run();
+        }
         static void Main(string[] args)
         {
-            DeveloperApp();
+            // DeveloperApp();
+            OddEvenApp();
         }
     }
 }
