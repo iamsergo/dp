@@ -9,9 +9,15 @@ namespace Memento
             var app = new EditorApplication();
             app.Run();
         }
+        static void GameApp()
+        {
+            var app = new GameApplication();
+            app.Run();
+        }
         static void Main(string[] args)
         {
             EditorApp();
+            GameApp();
         }
     }
 }
