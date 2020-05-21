@@ -9,9 +9,15 @@ namespace State
             var app = new PlayerApplication();
             app.Run();
         }
+        static void LightApp()
+        {
+            var app = new LightApplication();
+            app.Run();
+        }
         static void Main(string[] args)
         {
-            PlayerApp();
+            // PlayerApp();
+            LightApp();
         }
     }
 }
